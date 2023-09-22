@@ -9,7 +9,7 @@ provider "aws" {
 }
 
 resource "random_pet" "lambda_bucket_name" {
-  prefix = "learn-terraform-functions"
+  prefix = "hello-world"
   length = 4
 }
 
