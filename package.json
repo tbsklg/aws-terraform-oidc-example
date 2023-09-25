@@ -1,0 +1,9 @@
+{
+  "scripts": {
+      "token": "aws cognito-idp initiate-auth --auth-flow USER_PASSWORD_AUTH --client-id $(terraform output -raw user_pool_client_id) --auth-parameters USERNAME=guenther,PASSWORD=Test#123"
+  },
+  "dependencies": {
+    "@angular/cli": "^16.2.3",
+    "g": "^2.0.1"
+  }
+}
