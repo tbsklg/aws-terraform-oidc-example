@@ -19,7 +19,7 @@ exports.handler = async (event) => {
         
         return {
             statusCode: 200,
-            body: JSON.stringify({ themePreference })
+            body: JSON.stringify({ theme })
         };
     } catch (error) {
         return {

@@ -7,10 +7,8 @@ exports.handler = async (event) => {
     const requestBody = JSON.parse(event.body || '{}');
     const theme = requestBody.theme || 'light';
     
-    const tableName = 'user_settings'; 
-    
     const updateParams = {
-        TableName: tableName,
+        TableName: 'user_settings',
         Key: {
             UserId: userIdentity
         },
@@ -24,7 +22,8 @@ exports.handler = async (event) => {
         await dynamodb.update(updateParams).promise();
         
         return {
-            statusCode: 204 
+            statusCode: 204,
+            body: '',
         };
     } catch (error) {
         return {
