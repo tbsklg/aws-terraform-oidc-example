@@ -34,4 +34,8 @@ override.tf.json
 .terraformrc
 terraform.rc
 hello-world.zip
+get-settings.zip
+put-settings.zip
 response.json
+
+node_modules
